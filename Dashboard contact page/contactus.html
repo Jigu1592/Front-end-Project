@@ -1,0 +1,1008 @@
+<!--doctype html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!--link-stylesheet----------->
+
+    <!--using-fontAwesome------------>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    h3 {
+        font-size: 42px;
+        line-height: 55px;
+        color: #121212;
+        font-weight: 550;
+    }
+
+
+    h6 {
+        font-size: 20px;
+        line-height: 32px;
+        color: #6c6c6c;
+        margin-top: 16px;
+        font-weight: normal;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+
+
+
+    }
+
+    .bgcolor {
+        background-image: linear-gradient(to right bottom, #c9e9ca, #b2e7b5, #9ae5a0, #7fe28b, #60df76, #5cdf79, #57e07d, #52e080, #71e49a, #8ee7b1, #aaeac6, #c7ebd8);
+        width: 100%;
+        height: 120vh;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 6.5rem;
+        background: white;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
+        transition: all 0.5s ease;
+        z-index: 100000;
+
+    }
+
+    .nav .scrolled {
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav .logo {
+        color: rgb(17, 201, 100);
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .nav .navbar-toggler {
+        display: none;
+        border: none;
+        outline: none;
+
+    }
+
+    .nav .navbar-toggler .toggler-icon {
+        width: 27px;
+        height: 3px;
+        background-color: #121212;
+        margin: 5px 0;
+        position: relative;
+        display: block;
+        transition: all 0.3s ease-out 0s;
+    }
+
+    .nav .menu-bar .menu-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .menu-bar .menu-items li {
+        margin: 0 15px;
+        height: 30px;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .nav .menu-bar .menu-items li a {
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+        height: 100px;
+        width: 200px;
+
+    }
+
+    .nav .menu-bar .menu-items li a:hover {
+        color: green;
+        background-color: azure;
+        border-radius: 10px;
+
+    }
+
+
+    .nav .navbar-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .navbar-social span {
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 10px;
+        color: #6c6c6c;
+    }
+
+    .nav .navbar-social ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        
+    }
+
+    .nav .navbar-social ul li {
+        margin: 0 7px;
+        height: 2.4rem;
+        width: 5.5rem;
+        background-color: #21a758;
+        text-align: center;
+        border-radius: 5px;
+        float: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        box-shadow: 5px 5px 5px 0 #434445;
+        color: #fff;
+    }
+
+
+
+    .nav .navbar-social ul li a {
+        color: #FFFFFF;
+        font-size: 18px;
+        text-align: center;
+        float: center;
+    }
+
+
+
+    .nav .navbar-social ul li a:hover
+    {
+        color: green;
+        
+    }
+    
+    .nav .navbar-social ul li:hover {
+        color: green;
+        background-color: white;
+        border-radius: 3px;
+        border: 1px solid green;
+        
+        transition: all ease 0.3s;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .social a {
+        padding: 20px;
+        color: #7b7c7c;
+        font-size: 1.1rem;
+    }
+
+    .contact {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+       
+
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.999);
+        border-radius: 3px;
+    }
+
+    .social a:hover {
+        color: green;
+        transition: all ease 0.3s;
+    }
+
+    .contact-box {
+        background-color: #434445;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 30px;
+        box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.995);
+        border-radius: 15px;
+    }
+
+    .c-heading h1 {
+        font-family: Roboto;
+        color: #e7eef3;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .c-heading p {
+        font-family: Roboto;
+        color: #cecece;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .c-inputs {
+        margin: 15px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .c-inputs input {
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+        outline: none;
+        margin: 10px 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #f4f4f4;
+        display: flex;
+    }
+
+    .c-inputs textarea {
+        width: 250px !important;
+        height: 200px !important;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgba(82, 82, 82, 1);
+        color: #f4f4f4;
+        padding: 10px;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .c-inputs button:hover {
+        color: white;
+        width: 200px;
+        height: 40px;
+        background-color: green;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.678);
+        letter-spacing: 1px;
+    }
+
+    .btn:hover {
+        border-radius: 4px;
+        color: white;
+    }
+
+    .c-inputs input:focus {
+        border-bottom: 1px solid rgba(252, 252, 252, 1.00);
+        transition: all ease 0.5s;
+    }
+
+    .c-inputs textarea:focus {
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 1.00);
+        transition: all ease 0.5s;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .c-inputs button:active {
+        transform: scale(1.02);
+        color: red;
+    }
+
+    .map {
+        filter: grayscale(0.2);
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.989);
+        border: 2px solid #FFFFFF;
+
+        max-width: 1100px;
+        border-radius: 15px;
+    }
+
+    @media(max-width:1100px) {
+        .map {
+            display: none;
+        }
+    }
+
+    @media(max-width:450px) {
+        .social {
+            display: none;
+        }
+
+        .contact-box {
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        #contact {
+            position: static;
+            transform: translate(0, 0);
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .c-heading h1 {
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+    }
+
+    #wrapper {
+        margin: 5rem 7rem 10rem 7rem;
+    }
+
+    .title-box{
+    text-align: center;
+    margin: 5rem auto 10px;
+}
+.title-box p{
+    margin-top: 5px;
+    line-height: 24px;
+}
+.profile-box{
+    width: 280px;
+    height: 280px;
+    background-color: #03a9f5;
+    background: #fff;
+    border-right: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0 100px 10px rgba(115, 193, 255, 0.1);
+    padding: 20px;
+    position: relative;
+    transition: background 0.5s;
+    border-radius: 30px;
+    box-shadow: 15px 15px 35px 0 rgba(0, 0, 0, 0.979);
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.profile-box img{
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 100%;
+    transition: .5s;
+}
+.profile-box h4{
+     margin-top: 25px;
+     margin-bottom: 5px;
+     color: #0e3959;
+}
+small{
+    color: blue;
+
+}
+.social-box{
+    background: #21a758;
+    margin: 40px auto 20px;
+    text-align: center;
+    border-radius: 3px;
+    
+    
+}
+.social-box .fa{
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.profile-box p{
+    text-align: center;
+    line-height: 24px;
+    color: #555;
+}
+.team-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.profile-box img:hover{
+    width: 240px;
+}
+.profile-box:hover{
+    background: #21a758;
+}
+.profile-box:hover h4{
+    color: #fff;
+}
+.profile-box:hover p{
+    color: #efefef;
+}
+.profile-box:hover small{
+    color: #efefef;
+}
+
+footer
+{
+   background-color: #a5d8ba;
+   padding: 7rem;
+   margin-top: 5rem;
+}
+
+footer .row-one
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .row-one .logo{
+    color: green;
+}
+
+footer .row-one a{
+    padding-right: 20px;
+    font-size: 26px;
+    color:  #6c6c6c;
+}
+
+footer .row-one ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .second-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+footer .second-row h6{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    color: #4d4b4b;
+    padding-bottom: 20px;
+}
+
+footer .second-row li a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+footer .second-row li a:hover
+{
+    color: white;
+    background-color: #21a758;
+    border-radius: 10px;
+    width: 10%;
+}
+
+footer .second-row .first-row:nth-child(4)
+{
+max-width: 300px;
+}
+
+footer .second-row .newsletter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+footer .second-row .newsletter input
+{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 24px;
+    border: 1px solid green;
+    background-color: rgba(255, 255, 255, 0.822);
+    font-weight: 500;
+    outline: none;
+
+}
+
+footer .second-row .newsletter input::placeholder
+{
+    opacity: 1;
+    color: #6c6c6c;
+}
+
+footer .second-row .newsletter button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    background-color: green ;
+    cursor: pointer;
+    
+
+}
+
+footer .second-row .newsletter button:hover{
+
+    background-color: red ;
+}
+
+footer .second-row .text
+{
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.copyright
+{
+    background-color: #21a758;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.bgcolor .contact .cssbuttons-io-button {
+    background: #bb103b;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: absolute;
+    height: 3.8em;
+    width: 15rem;
+    padding-right: 3.3em;
+    cursor: pointer;
+    top:92%;
+
+  }
+  
+  .bgcolor .contact  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    
+    right: 0.3em;
+    transition: all 0.3s;
+    color: #21a758;
+  }
+  
+  .bgcolor .contact  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+
+  .bgcolor .contact .cssbuttons-io-button:hover
+  {
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #e8eeeb
+  }
+  
+  .bgcolor .contact form .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .bgcolor .contact  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .bgcolor .contact  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
+.team-row .profile-box .dtl 
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   margin-top: 40px;
+
+}
+.team-row .profile-box .dtl p{
+    font-size: smaller;
+    font-weight: 300;
+    
+}
+
+.heading{
+    position: absolute;
+    
+    text-align: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-left: 43%;
+
+}
+
+.heading h3{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+
+</style>
+
+
+
+
+
+
+<body>
+
+    <div class="nav">
+        <a class="logo" href="#">
+            <h2>Anonymous</h2>
+        </a>
+
+        <div class="navbar-toggler" type="button" id="bar">
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+        </div>
+
+        <div class="menu-bar">
+            <ul class="menu-items">
+                <li>
+                    <center><a href="/index.html" class="m1">Home</a></center>
+                </li>
+                <li>
+                    <center><a href="#">Service</a></center>
+                </li>
+                <li>
+                    <center><a href="#">Pricing</a></center>
+                </li>
+                <li>
+                    <center><a href="/Dashboard contact page/contactus.html">Contact</a></center>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-social">
+           <!-- <span>FOLLOW US</span>
+            <ul>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+
+            </ul>
+            -->
+
+            <ul>
+                <li class="log-in"><a href="/login.html">Log In</a></li>
+                <li class="log-in"><a href="/register.html">Register</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div>&nbsp;</div>
+<div class="bgcolor">
+    <div class="heading">
+        <h3>Contact Us</h3>
+    </div>
+
+    <div class="contact">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <div class="contact-box">
+            
+            <div class="c-heading">
+                <h1>Get In Touch</h1>
+                <p>Call Or Email Us Regarding Question Or Issues</p>
+            </div>
+            <div class="c-inputs">
+            <form>
+                <input type="text" placeholder="Full Name"/>	
+                <input type="email" placeholder="Example@gmail.com"/>
+                <textarea name="message" placeholder="Write Message"></textarea>
+            </div>
+            <!--<div class="btn">
+                <button><font body color="">SEND</font></button>
+            </div>-->
+            <button class="cssbuttons-io-button"> Get started
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor"
+                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                        </path>
+                    </svg>
+                </div>
+            </button>
+            </form> 
+              
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.717179757296!2d73.36122634999863!3d22.288700748877424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e0!3m2!1sen!2sin!4v1678985358544!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	
+        </div>     
+    </div>
+    
+</div>
+ 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/icons/icons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/icons/icons.js"></script>
+    
+        
+
+    <div class="title-box">
+        <h1>Meet Our Expert team </h1>
+        <p>We make for you this Website Hope ! it helpfull . 
+            
+             Before you leave from this page give your feedback .
+            <br>Thank you ! 
+        </p>
+    </div>
+    <div class="team-row">
+        <div class="profile-box">
+            <h4>Jigenesh .....</h4>
+            <small>Team Member</small>
+            <img src="/assets/Images/jigu1.jpg">
+            <div class="dtl">
+                <p>solankiji1592@gmail.com<i class="fa fa-gmail"></i></p>
+                <p>Bachlor of Computer Application</p>
+                <p></p>
+            </div>
+           
+                <div class="social-box">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twiter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            
+        </div>
+        <div class="profile-box">
+            <h4>XYZ</h4>
+            <small>Team Member</small>
+            <img src="1.png">
+            
+            <div class="dtl">
+                <p>XYZ123@gmail.com<i class="fa fa-gmail"></i></p>
+                <p>Bachlor of Computer Application</p>
+                <p></p>
+            </div>
+                <div class="social-box">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twiter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            
+        </div>
+        <div class="profile-box">
+            <h4>XYZ</h4>
+            <small>Team Member</small>
+            <img src="1.png">
+            <div class="dtl">
+                <p>XYz148@gmail.com<i class="fa fa-gmail"></i></p>
+                <p>Bachlor of Computer Application</p>
+                <p></p>
+            </div>
+                <div class="social-box">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twiter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            
+        </div>
+
+
+
+        <div class="profile-box">
+            <h4>XYZ</h4>
+            <small>Team Member</small>
+            <img src="1.png">
+            <div class="dtl">
+                <p>XYZ@gmail.com<i class="fa fa-gmail"></i></p>
+                <p>Bachlor of Computer Application</p>
+                <p></p>
+            </div>
+                <div class="social-box">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twiter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            
+        </div>
+        <div class="profile-box">
+            <h4>xyz</h4>
+            <small>Team Member</small>
+            <img src="1.png">
+            <div class="dtl">
+                <p>xyz@gmail.com<i class="fa fa-gmail"></i></p>
+                <p>Bachlor of Computer Application</p>
+                <p></p>
+            </div>
+                <div class="social-box">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twiter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            
+        </div>
+        <div class="profile-box">
+            <h4>xyz</h4>
+            <small>Team Member</small>
+            <img src="1.png">
+            <div class="dtl">
+                <p>xyz7431@gmail.com<i class="fa fa-gmail"></i></p>
+                <p>Bachlor of Computer Application</p>
+                <p></p>
+            </div>
+                <div class="social-box">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twiter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            
+        </div>
+        
+        
+
+    </div>
+    <footer>
+        <div class="row-one">
+            <a class="logo" href="#">
+                <h2>Anonymous</h2>
+            </a>
+
+
+
+
+            <ul>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="second-row">
+            <div class="first-row">
+                <h6 class="footer-title">Company</h6>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Our Expert Team</a></li>
+                </ul>
+            </div>
+
+            <div class="first-row">
+                <h6 class="footer-title">Product & Service</h6>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Learn with us</a></li>
+                    <li><a href="#">Work with us</a></li>
+                </ul>
+            </div>
+
+            <div class="first-row">
+                <h6 class="footer-title">Help & Support</h6>
+                <ul>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="first-row">
+                <h6 class="footer-title">subscribe Newsletter</h6>
+                <div class="newsletter">
+                    <input type="text" name="" placeholder="Enter email" id="" />
+                    <button type="submit"><i class="fa fa-angle-double-right"></i></i></button>
+                </div>
+                <p class="text">Subscribe weekly newsletter to stay upto date. We don't send spam.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p> Website created by Jignesh Solanki</p>
+    </div>
+
+</body>
+
+</html>

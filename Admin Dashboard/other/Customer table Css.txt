@@ -1,0 +1,50 @@
+/*Customer table*/
+
+
+/*.custom-table {
+    float: right;
+    width: 30%;
+}*/
+.cus-table {
+    width: 28%;
+    float: right;
+    background-color: white;
+    box-shadow: 10px 10px 20px #bbb;
+    padding: 15px;
+    
+}
+table td {
+    padding: 20px 0px 0px 0px;
+}
+
+table th {
+    text-align: left;
+}
+
+/*.content-pro-par.container {
+    margin: 6% 2% 0% 2%;
+}*/
+
+.cus-h {
+    float: left;
+}
+
+.cus-table  {
+    margin-bottom: 25px;
+}
+
+.cus-btn {
+    float: right;
+}
+
+.cus-btn button {
+    background-color: lightskyblue;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 15px;
+}

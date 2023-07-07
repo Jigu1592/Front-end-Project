@@ -1,0 +1,276 @@
+
+body{
+    background:linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%);
+}
+.contactus{
+    position: relative;
+    width: 80%;
+    padding: 90px 100px;
+
+}
+.contactus .title{
+    display: flex;
+    padding: auto;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+.contactus .title h2{
+      color: #fff;
+      font-weight: 300;
+}
+
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+    
+}
+.contact {
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 15px 15px 35px 0 rgba(0, 0, 0, 0.717);
+}
+
+.contact input
+{
+    border-radius: 20px;
+    border: 5px solid;
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info"
+                            "form map";
+                            
+    grid-gap: 20px;
+    
+}
+
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 300;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.formBox{
+    position: relative;
+    width: 100%;
+    
+}
+.formBox .row200{
+    width: 100px;
+    
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.inputBox span{
+   color: #18b7ff;
+   margin-top: 10px;
+   margin-bottom: 5px;
+   font-weight: 500;
+}
+.inputBox input {
+    
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 150px;
+    margin-bottom: 10px;
+    width: 600px;
+    border-radius: 20px;
+}
+.inputBox input[type="submit"]{
+    background-color: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+
+
+.info{
+    background: #0e3959;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    height: 50%;
+    box-shadow: 15px 15px 35px 0 rgba(0, 0, 0, 0.987);
+    
+}
+.info h3{
+    color: #fff;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 30px;
+    
+}
+.info .infoBox div span{
+    min-width: 40px;
+    
+    height: 40px;
+    color: #ff578b;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: #fff;
+    font-size: 1.1em;
+    
+
+}
+.info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    margin-top: -300px;
+    height: 58%;
+    box-shadow: 15px 15px 35px 0 rgba(0, 0, 0, 0.987);
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    min-height: 50px;
+}
+
+
+.title-box{
+    text-align: center;
+    margin: 10px auto 10px;
+}
+.title-box p{
+    margin-top: 5px;
+    line-height: 24px;
+}
+.profile-box{
+    width: 280px;
+    height: 280px;
+    background-color: #03a9f5;
+    background: #fff;
+    border-right: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0 100px 10px rgba(115, 193, 255, 0.1);
+    padding: 20px;
+    position: relative;
+    transition: background 0.5s;
+    border-radius: 30px;
+    box-shadow: 15px 15px 35px 0 rgba(0, 0, 0, 0.979);
+}
+
+.profile-box img{
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 4px;
+    transition: .5s;
+}
+.profile-box h4{
+     margin-top: 25px;
+     margin-bottom: 5px;
+     color: #0e3959;
+}
+small{
+    color: blue;
+
+}
+.social-box{
+    background: #2196f3;
+    margin: 60px auto 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+.social-box .fa{
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.profile-box p{
+    text-align: center;
+    line-height: 24px;
+    color: #555;
+}
+.team-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+.profile-box img:hover{
+    width: 240px;
+}
+.profile-box:hover{
+    background: #0e3959;
+}
+.profile-box:hover h4{
+    color: #fff;
+}
+.profile-box:hover p{
+    color: #efefef;
+}
+.profile-box:hover small{
+    color: #efefef;
+}

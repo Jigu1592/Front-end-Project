@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Admin Login</title>
+<link type="text/css" rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+    <div class="center">
+        <h1>Admin Login</h1>
+        <form method="post" action="index.html">
+            <div class="txt_field">
+                <input type="text" id="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">
+                Forgot Password?
+            </div>
+          <input type="submit" value="Login" onclick="login()" />
+            <!--<div class="btn">
+            <button><a href="index.html">Login</a></button>
+        </div>-->
+        </form>
+    </div>
+    <script>
+        function login(){
+            var Username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            if(Username=="Team Jignesh" && password=="123456"){
+                window.location.assign("index.html");
+                /*alert("Login Successfuly");*/
+            }
+            else{
+                alert("Invalid Data");
+            }
+
+        }
+    </script>
+</body>
+</html>

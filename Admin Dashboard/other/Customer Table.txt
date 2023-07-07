@@ -1,0 +1,44 @@
+<!--Customer Table-->
+
+
+                <!--<div class="custom-table container ">-->
+                   <div class="cus-table "></div>
+                    <div class="cus-h">
+                        <h2>Customers</h2>
+                    </div>
+                    <div class="cus-btn">
+                        <button>See All</button>
+                    </div>
+                    <div class="clear"></div> 
+                </div>
+                    <table style="width: 100%;">
+                        <tr>
+                            <!--<th>Pic</th>-->
+                            <th>Name</th>
+                            <th>Contact</th>
+                        </tr>
+                        <tr>
+                            <!--<td><img src="images/1.png"/></td>-->
+                            <td>Kishan</td>
+                            <!--<td><a href="tel:1234567890">1234567890</a></td>-->
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>Kishan</td>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>Kishan</td>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>Kishan</td>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>Kishan</td>
+                            <td>1234567890</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clear"></div>
